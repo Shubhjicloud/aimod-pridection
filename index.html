@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI MOD PREDICTION</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0ff;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 2.5em;
+      text-shadow: 0 0 20px #00ffff;
+    }
+    p {
+      color: #ccc;
+      font-size: 1.1em;
+    }
+
+    /* Glow for description text */
+    .glow-text {
+      color: #0ff;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+      animation: glowPulse 2s infinite alternate;
+    }
+    @keyframes glowPulse {
+      from { text-shadow: 0 0 10px #00ffff; }
+      to { text-shadow: 0 0 25px #00ffff; }
+    }
+
+    /* Glowing Join Button */
+    .btn {
+      background: #00ff88;
+      color: #000;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 0 0 20px #00ff88;
+      transition: 0.3s;
+      animation: buttonGlow 2s infinite alternate;
+    }
+    @keyframes buttonGlow {
+      from { box-shadow: 0 0 15px #00ff88; }
+      to { box-shadow: 0 0 35px #00ff88; }
+    }
+    .btn:hover {
+      background: #00cc66;
+      transform: scale(1.05);
+    }
+
+    /* Circular glowing image */
+    img {
+      margin-top: 40px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 35px #00ff00;
+      transition: 0.5s ease;
+      animation: imageGlow 2.5s infinite alternate;
+    }
+    @keyframes imageGlow {
+      from { box-shadow: 0 0 25px #00ff00; }
+      to { box-shadow: 0 0 45px #00ff00; }
+    }
+
+    /* Timer Styling */
+    .timer {
+      margin-top: 25px;
+      color: #00ff00;
+      font-size: 1.3em;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+      animation: textPulse 1.5s infinite alternate;
+    }
+    @keyframes textPulse {
+      from { opacity: 0.8; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>AI MOD PREDICTION 100%</h1>
+  <p class="glow-text">Analyze past results, detect trend patterns, and predict upcoming colors using AI logic.</p>
+  <button class="btn">Join Now</button>
+  <br>
+  <img src="https://i.ibb.co/ZzgHJHYw/IMG-20251110-155751.jpg" alt="AI dashboard preview">
+  
+  <!-- Neon Timer -->
+  <div class="timer" id="timer">00:00:00</div>
+
+  <p>© 2025 AI Prediction | For educational purposes only</p>
+
+  <script>
+    // Simple live timer
+    function updateTimer() {
+      const timer = document.getElementById('timer');
+      const now = new Date();
+      const hrs = String(now.getHours()).padStart(2, '0');
+      const mins = String(now.getMinutes()).padStart(2, '0');
+      const secs = String(now.getSeconds()).padStart(2, '0');
+      timer.textContent = `${hrs}:${mins}:${secs}`;
+    }
+    setInterval(updateTimer, 1000);
+    updateTimer();
+  </script>
+</body>
+</html>
